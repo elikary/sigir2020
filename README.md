@@ -7,30 +7,28 @@ Paper DOI (https://doi.org/10.1145/3397271.3401096)
 
 ## Sotware Required
 This project contains two modules:
--Recommendation: we used Librec 2.0 library to run the algorithms of our experiments
-    -we uploaded a copy of the librec source code with some algorithms included
--Evaluation: we coded evaluation process using Python 
+- **Recommendation:** we used Librec 2.0 library to run the algorithms of our experiments (See **librec-2.0.0** folder)
+- **Evaluation:** we coded evaluation process using Python (See **FP_metrics** folder)
 
 
 
-## Libraries Required
 ### Recommendation
-We used the recommendation library 
-https://www.librec.net/
+We used the recommendation library [Librec-2.0.0](https://www.librec.net/). In this library there is a range of algorithms to produce recommendations.  
+To run our experiments we included some extra algorithms to test the optimal ranking functions for Precision and Anti-Precision
 
-We included some extra algorithms to test the optimal ranking functions for Precision and Anti-Precision
 Here is the list of the new included algorithms:
-- Optimal Ranking in Observed FDR 
-- Optimal Ranking in Observed Precision
-- Optimal Ranking in True FDR
-- Optimal Ranking in True Precision
-- Optimal Ranking in True FDR restricted to test
-- Optimal Ranking in True Precision restricted to test
 
-Please note that FDR stands for False Discovery Rate which represents the anti-metric of precision (i.e., anti-precision)
+- Optimal Observed AntiPrecision
+- Optimal Observed Precision
+- Optimal True AntiPrecision
+- Optimal True Precision
+- Optimal True AntiPrecision restricted to test
+- Optimal True Precision restricted to test
 
-#### Algorithm Configuration
-The configurations per each algorithm are located in the /conf directory of the main folder of the project
+Please refer to `librec-core.src.main.java.recommender.baseline` to see their implementations.
+
+#### Evaluation
+
 
 
 
