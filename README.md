@@ -41,7 +41,9 @@ For recommendation execution go to `librec-2.0.0/bin` and run the following comm
     for i in 1 2 3 4 5; do ./run_cross movielens1M 3706 $i; done 
 
 The `run_cross` script runs recommendation using 5-fold cross_validation.
+
 `3706` is the size of the list (big size for condensed metrics only, despite of evaluating at top k)
+
 `$i` is the number of fold 
 
 The results per each fold will be stored in the `librec/result/movielens1M/fold$i` directory
