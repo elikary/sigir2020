@@ -20,7 +20,7 @@ Can possibly run on OSX however this has not been tested yet.
 
 ## Datasets 
 For convinience we have uploaded the datasets used for all the experiments presented in the paper.  Please see the folder:
-`librec-2.0.0/data`
+`sigir2020/librec-2.0.0/data`
 - MOVIELENS 1M (Observed) Train and (Observed) test
 - CM100K (Observed) Train and (Observed and True) tests
 - YAHOO (Observed) Train and (Observed and True) tests
