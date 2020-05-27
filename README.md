@@ -14,6 +14,7 @@ For convinience we have uploaded the datasets used for all the experiments prese
 `sigir2020/librec-2.0.0/data`
 - MOVIELENS 1M (Observed) Train and (Observed) test
 - CM100K (Observed) Train and (Observed and True) tests
+- CM100K SYNTHETIC (Observed) Train and (Observed and True) tests
 - YAHOO (Observed) Train and (Observed and True) tests
 
 ## OS support
