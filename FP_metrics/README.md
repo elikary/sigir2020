@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-@author: Elisa Mena-Maldonado
-"""
-
-### Evaluation
+## Evaluation
 
 For the evaluation stage we developed some scripts to run evaluation on each of the datasets we used.
 To run the evaluation scripts go to `sigir2020/FP_metrics` and run the following command:
