@@ -15,7 +15,7 @@ For convinience we have uploaded the datasets used for all the experiments prese
 - MOVIELENS 1M (Observed) Train and (Observed) test
 - CM100K (Observed) Train and (Observed and True) tests
 - CM100K SYNTHETIC (Observed) Train and (Observed and True) tests
-- YAHOO (Observed) Train and (Observed and True) tests
+- YAHOO! R3 (Observed) Train and (Observed and True) tests
 
 ## OS support
 The code was tested on Linux
