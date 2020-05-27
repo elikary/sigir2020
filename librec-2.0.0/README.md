@@ -1,8 +1,4 @@
-#### System Requirements
-Java JDK: 1.8 or above (the software was tested with openJDK Runtime Environment (build 1.8.0_222-b10)).
-Maven: tested with version 3.6.0
-
-### Recommendation
+## Recommendation
 We used the recommendation library [Librec-2.0.0](https://www.librec.net/). In this library there is a range of algorithms to produce recommendations.
 To run our experiments we included some extra algorithms to test the optimal ranking functions for Precision and Anti-Precision
 
@@ -17,7 +13,7 @@ Here is the list of the new included algorithms:
 
 Please refer to `librec-core.src.main.java.recommender.baseline` to see their implementations.
 
-#### Running recommendation
+### Running recommendation
 First download the `sigir2020` folder into your `home` directory/folder. `sigir2020` contains 2 folders:
 - `librec 2.0.0`
 - `FP_metrics`
@@ -37,3 +33,7 @@ By default, librec returns the results as files into folders, to bring the files
 
 The final folder organization should be as follows:
  `librec-2.0.0/result/movielens1M/fold$i/<algorithm name>`
+ 
+ #### System Requirements
+ Java JDK: 1.8 or above (the software was tested with openJDK Runtime Environment (build 1.8.0_222-b10)).
+ Maven: tested with version 3.6.0
