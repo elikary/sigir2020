@@ -1,19 +1,18 @@
 ## Evaluation
 
-For the evaluation stage we developed some scripts to run evaluation on each of the datasets we used.
-
-Run
+For the evaluation stage run:
 
     $ cd sigir2020/FP_metrics/scripts
     $ python main.py
 
-After the main script was run, you will see the results per each fold in `FP_metrics/evaluation/` as `<dataset-name>/<dataset-name_fold$i.csv>`. For instance `FP_metrics/evaluation/cm100k_observed/cm100_observed_fold1.csv`
+After the main script is run, you will see the results per each fold in `FP_metrics/evaluation/` as `<dataset-name>/<dataset-name_fold$i.csv>`. 
+For instance `FP_metrics/evaluation/cm100k_observed/cm100_observed_fold1.csv`
 
 Figure here!
 
-To compute the folds average per each dataset, in the same folder (scripts), run:
+Next, to compute the folds average per each dataset run:
 
-    python cross_validation.py
+    $ python cross_validation.py
     
 The results will be saved in `FP_metrics/evaluation/` as `<dataset-name>/<dataset-name_k.csv>`. For instance `FP_metrics/evaluation/cm100k_observed/cm100_observed_10.csv`
 
