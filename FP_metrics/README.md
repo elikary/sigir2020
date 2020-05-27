@@ -1,19 +1,17 @@
 ## Evaluation
 
 For the evaluation stage we developed some scripts to run evaluation on each of the datasets we used.
-To run the evaluation scripts go to `sigir2020/FP_metrics` and run the following command:
 
-    python main.py
+Run
 
-NOTE: To run scripts in unix systems, you need to assign the right persmissions to each file.
-
-    chmod +x <scriptname>
+    $ cd sigir2020/FP_metrics/scripts
+    $ python main.py
 
 After the main script was run, you will see the results per each fold in `FP_metrics/evaluation/` as `<dataset-name>/<dataset-name_fold$i.csv>`. For instance `FP_metrics/evaluation/cm100k_observed/cm100_observed_fold1.csv`
 
 Figure here!
 
-Now to compute the average per each fold, you need to run:
+To compute the folds average per each dataset, in the same folder (scripts), run:
 
     python cross_validation.py
     
