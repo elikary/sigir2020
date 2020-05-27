@@ -17,8 +17,8 @@ Please refer to `librec-core.src.main.java.recommender.baseline` to see their im
 First, download the `sigir2020` folder into your `home` directory.
 
 `sigir2020` contains 2 folders:
-- [librec 2.0.0](https://github.com/elikary/sigir2020/tree/master/FP_metrics)
-- [FP_metrics](https://github.com/elikary/sigir2020/tree/master/librec-2.0.0)
+- `FP_metrics`
+- `librec-2.0.0`
 
 For recommendation execution run:
 
