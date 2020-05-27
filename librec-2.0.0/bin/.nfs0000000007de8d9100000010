@@ -1,0 +1,26 @@
+#!/bin/sh
+DATASET=$1 #name of the data set in /data directory
+MAINDIR="/home/el3/E93913/PhDstuff/shared_code/librec-2.0.0/" #librec source dir
+CONFPATH="conf/all_algorithms" #config path inside librec main dir (algorithm config)
+DATAPATH="data/cross_validation/rocio/$DATASET/fold$3" #data path inside librec main dir (data for recommender train and test sets)
+RESULT="result/cross_validation/rocio/$DATASET/fold$3" #result path inside librec main dir (recommended list per algorithm)
+TRAINFILE="train012.txt" #train file should be in the datapath (name of the training set file)
+TESTFILE="test012.txt" #test file should be in the datapath (name of the training set file)
+k=$2 #size of the recommended list
+
+# I used 10 algorithms, there are more in the CF folder of the source dir
+#for algorithm in pnmf rankals eals gbpr plsa bpoissmf climf 
+#for algorithm in wrmf wbpr
+for algorithm in \
+globalaverage itemaverage mostpopular itemknn listrankmf randomguess slim svdpp ranksgd userknn \
+optimalobservedprecision optimalobservedfdr optimaltruefdr optimaltrueprecision \
+optimaltruefdrrestricted optimaltrueprecisionrestricted smootheditemaverage \
+pnmf eals gbpr plsa bpoissmf wrmf wbpr
+do
+	./librec rec -exec -conf "$MAINDIR$CONFPATH/"$algorithm".properties" -D "dfs.data.dir=../$DATAPATH" -D "data.input.path=$TRAINFILE" -D "data.testset.path=$TESTFILE" -D "rec.recommender.ranking.topn="$k -D "dfs.result.dir=../"$RESULT
+done
+
+#run this file in a unix command line name of dataset, size reclist, number fold(./run_one cm100k_true 1084 1)
+#movielens1M 3706
+#yahoo 1000
+# for i in 1 2 3 4 5; do ./run_cross movielens1M 3706 $i; done |tee logs/movielens1M_cv_log.txt

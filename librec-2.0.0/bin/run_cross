@@ -1,0 +1,20 @@
+#!/bin/sh
+DATASET=$1 #name of the data set in /data directory
+MAINDIR="/$HOME/sigir2020/librec-2.0.0/" #librec source dir
+CONFPATH="conf/all_algorithms" #config path inside librec main dir (algorithm config)
+DATAPATH="data/$DATASET/fold$3" #data path inside librec main dir (data for recommender train and test sets)
+RESULT="result/$DATASET/fold$3" #result path inside librec main dir (recommended list per algorithm)
+TRAINFILE="train012.txt" #train file should be in the datapath (name of the training set file)
+TESTFILE="test012.txt" #test file should be in the datapath (name of the training set file)
+k=$2 #size of the recommended list
+
+for algorithm in \
+mostpopular itemknn listrankmf randomguess slim svdpp ranksgd userknn \
+optimalobservedprecision optimalobservedfdr optimaltruefdr optimaltrueprecision \
+optimaltruefdrrestricted optimaltrueprecisionrestricted smootheditemaverage \
+pnmf eals gbpr plsa bpoissmf wrmf wbpr
+do
+	./librec rec -exec -conf "$MAINDIR$CONFPATH/"$algorithm".properties" -D "dfs.data.dir=../$DATAPATH" -D "data.input.path=$TRAINFILE" -D "data.testset.path=$TESTFILE" -D "rec.recommender.ranking.topn="$k -D "dfs.result.dir=../"$RESULT
+done
+
+

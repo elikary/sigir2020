@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="librec-core:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/librec_core_jar</output-path>
+    <root id="archive" name="librec-core.jar">
+      <element id="module-output" name="librec-core" />
+    </root>
+  </artifact>
+</component>
