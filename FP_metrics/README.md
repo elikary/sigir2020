@@ -1,14 +1,14 @@
 ## Evaluation
+After the recommendations per each algorithm are returned by librec, the next step is the evaluation.
 
 For the evaluation stage run:
 
     $ cd sigir2020/FP_metrics/scripts
     $ python main.py
 
-After the main script is run, you will see the results per each fold in `FP_metrics/evaluation/` as `<dataset-name>/<dataset-name_fold$i.csv>`. 
-For instance `FP_metrics/evaluation/cm100k_observed/cm100_observed_fold1.csv`
+After the main script run, you will see the results per each fold in `~/sigir2020/FP_metrics/evaluation/` as `<dataset-name>/<dataset-name_fold$i.csv>`. 
 
-Figure here!
+![](https://github.com/elikary/sigir2020/blob/master/images/folds.png)
 
 Next, to compute the folds average per each dataset run:
 
