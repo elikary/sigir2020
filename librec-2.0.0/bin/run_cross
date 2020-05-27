@@ -10,8 +10,8 @@ k=$2 #size of the recommended list
 
 for algorithm in \
 mostpopular itemknn listrankmf randomguess slim svdpp ranksgd userknn \
-optimalobservedprecision optimalobservedfdr optimaltruefdr optimaltrueprecision \
-optimaltruefdrrestricted optimaltrueprecisionrestricted smootheditemaverage \
+optimalobservedprecision optimalobservedantiprecision optimaltrueantiprecision optimaltrueprecision \
+optimaltrueantiprecisionrestricted optimaltrueprecisionrestricted smootheditemaverage \
 pnmf eals gbpr plsa bpoissmf wrmf wbpr
 do
 	./librec rec -exec -conf "$MAINDIR$CONFPATH/"$algorithm".properties" -D "dfs.data.dir=../$DATAPATH" -D "data.input.path=$TRAINFILE" -D "data.testset.path=$TESTFILE" -D "rec.recommender.ranking.topn="$k -D "dfs.result.dir=../"$RESULT
