@@ -29,7 +29,7 @@ For recommendation execution run:
 + `10` is the size of the list 
 + `$i` is the number of fold
 
-The results per each fold will be stored in the `librec/result/cm100k_observed/fold$i` directory
+The results per each fold are stored in the `librec/result/cm100k_observed/fold$i` directory
 By default, librec returns the results as files into folders, to bring the files outside the folders, run the following command:
 
     $ for i in 1 2 3 4 5; do ./movefolders_cv cm100k_observed $i; done
@@ -39,7 +39,7 @@ The final folder organization should be as follows:
  
  For instance, `librec-2.0.0/result/cm100k_observed/fold1/mostpopular`
  
- NOTE: To run scripts in unix systems, you need to assign the right persmissions to each file.
+ NOTE: To run scripts in unix systems, you need to assign the right persmissions to each file. Run:
 
     $ chmod +x run_cross
     $ chmod +x movefolders_cv
