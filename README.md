@@ -1,9 +1,8 @@
 # Agreement and Disagreement between True and False-Positive Metrics in Recommender Systems Evaluation
 Source code used for the results reported in the [SIGIR2020 paper](http://marksanderson.org/publications/my_papers/sigir2020.pdf)
 
-Paper DOI (https://doi.org/10.1145/3397271.3401096)
-
 > E. Mena-Maldonado, R. Cañamares, [P. Castells](http://ir.ii.uam.es/castells), Y. Ren and [M.Sanderson](http://marksanderson.org). Agreement and Disagreement between True and False-Positive Metrics in Recommender Systems Evaluation. 43rd ACM International Conference on Research and Development in Information Retrieval (SIGIR 2020). ACM, Virtual Event, China.
+Paper DOI (https://doi.org/10.1145/3397271.3401096)
 
 ## Sotware Required
 This project contains two modules:
