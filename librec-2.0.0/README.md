@@ -15,8 +15,8 @@ Please refer to `librec-core.src.main.java.recommender.baseline` to see their im
 
 ### Running recommendation
 First download the `sigir2020` folder into your `home` directory/folder. `sigir2020` contains 2 folders:
-- `librec 2.0.0`
-- `FP_metrics`
+- [librec 2.0.0](https://github.com/elikary/sigir2020/tree/master/FP_metrics)
+- [FP_metrics](https://github.com/elikary/sigir2020/tree/master/librec-2.0.0)
 
 For recommendation execution go to `librec-2.0.0/bin` and run the following command:
 
@@ -33,6 +33,13 @@ By default, librec returns the results as files into folders, to bring the files
 
 The final folder organization should be as follows:
  `librec-2.0.0/result/cm100k_observed/fold$i/<algorithm name>`
+ 
+ For instance, `librec-2.0.0/result/cm100k_observed/fold1/mostpopular`
+ 
+ NOTE: To run scripts in unix systems, you need to assign the right persmissions to each file.
+
+    chmod +x run_cross
+    chmod +x movefolders_cv
  
  #### System Requirements
  Java JDK: 1.8 or above (the software was tested with openJDK Runtime Environment (build 1.8.0_222-b10)).
