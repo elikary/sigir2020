@@ -16,8 +16,8 @@ threshold = 0
 folds = range(1,6)
 k = 10
 test_file_name = 'test012'
-data_path = '../data/'
-recommendation_path = '../recommendation/'
+data_path = '../../librec-2.0.0/data/'
+recommendation_path = '../../librec-2.0.0/result/'
 evaluation_result_path = '../evaluation/'
 
 recommendation_cols = ['user_id', 'item_id', 'score']
