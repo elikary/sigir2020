@@ -1,5 +1,5 @@
-FP_metrics/recommendation/
-librec-2.0.0/result/
-*/.idea/workspace.xml
+FP_metrics/recommendation/*
+librec-2.0.0/result/*
 librec-2.0.0/bin/logs/*
 libre-2.0.0/bin/.nfs*
+.idea
