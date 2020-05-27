@@ -20,19 +20,19 @@ First download the `sigir2020` folder into your `home` directory/folder. `sigir2
 
 For recommendation execution go to `librec-2.0.0/bin` and run the following command:
 
-    for i in 1 2 3 4 5; do ./run_cross movielens1M 3706 $i; done
+    for i in 1 2 3 4 5; do ./run_cross cm100k_observed 10 $i; done
 
 + `run_cross` script runs recommendation using 5-fold cross_validation.
-+ `3706` is the size of the list (big size for condensed metrics only, despite of evaluating at top k)
++ `10` is the size of the list 
 + `$i` is the number of fold
 
-The results per each fold will be stored in the `librec/result/movielens1M/fold$i` directory
+The results per each fold will be stored in the `librec/result/cm100k_observed/fold$i` directory
 By default, librec returns the results as files into folders, to bring the files outside the folders, run the following command:
 
-    for i in 1 2 3 4 5; do ./movefolders_cv movielens1M $i; done
+    for i in 1 2 3 4 5; do ./movefolders_cv cm100k_observed $i; done
 
 The final folder organization should be as follows:
- `librec-2.0.0/result/movielens1M/fold$i/<algorithm name>`
+ `librec-2.0.0/result/cm100k_observed/fold$i/<algorithm name>`
  
  #### System Requirements
  Java JDK: 1.8 or above (the software was tested with openJDK Runtime Environment (build 1.8.0_222-b10)).
