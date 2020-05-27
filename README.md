@@ -10,14 +10,6 @@ This project contains two modules:
 - **Recommendation:** we used Librec 2.0 library to run the algorithms of our experiments (See **librec-2.0.0** folder)
 - **Evaluation:** we created some scripts in Python to run evaluation in our experiments (See **FP_metrics** folder)
 
-### OS support
-The code was tested on Linux
-
-        NAME="Red Hat Enterprise Linux Server"
-        VERSION="7.7 (Maipo)"
-        
-Can possibly run on OSX however this has not been tested yet.
-
 ## Datasets 
 For convinience we have uploaded the datasets used for all the experiments presented in the paper.  Please see the folder:
 `sigir2020/librec-2.0.0/data`
@@ -25,6 +17,13 @@ For convinience we have uploaded the datasets used for all the experiments prese
 - CM100K (Observed) Train and (Observed and True) tests
 - YAHOO (Observed) Train and (Observed and True) tests
 
+## OS support
+The code was tested on Linux
+
+        NAME="Red Hat Enterprise Linux Server"
+        VERSION="7.7 (Maipo)"
+        
+Can possibly run on OSX however this has not been tested yet.
 
 
 
