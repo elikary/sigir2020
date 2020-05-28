@@ -21,14 +21,13 @@ def load_data(path, data_set_name, file_name, separator, cols, head):
  
 
        
-def concat_allfolds(result_cols, data_set):
+def concat_allfolds(data_set):
         
     eval_files = []
     
     for f in cmv.folds:
 
-        eval_data = load_data(cmv.evaluation_result_path, data_set, data_set +'_fold'+ str(f) +'.csv', ',', result_cols, 0)
-        eval_data['fold'] = 'fold'+ str(f)
+        eval_data = load_data(cmv.evaluation_result_path, data_set, data_set +'_fold'+ str(f) +'.csv', ',', 0)
         print(data_set + ' fold' + str(f))
         eval_files.append(eval_data)
 
@@ -38,7 +37,7 @@ def concat_allfolds(result_cols, data_set):
  
 def compute_mean_allfolds(eval_all, k, algorithms, data_set):
     
-    eval_final = pd.DataFrame(columns= eval_all.columns[0:len(eval_all.columns)-1])
+    eval_final = pd.DataFrame(columns= eval_all.columns)
     
     for a in algorithms:
     
@@ -57,12 +56,7 @@ def compute_mean_allfolds(eval_all, k, algorithms, data_set):
 def main():
 
     for d in cmv.data_sets:
-        if d == 'movielens1M':
-            r = cmv.result_cols_condensed
-        else:
-            r = cmv.result_cols
-         
-        compute_mean_allfolds(concat_allfolds(r, d), cmv.k, cmv.algorithms, d)
+        compute_mean_allfolds(concat_allfolds(d), cmv.k, cmv.algorithms, d)
 
 if __name__ == "__main__":
     main()    
