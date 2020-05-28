@@ -33,8 +33,8 @@ result_cols = ['algorithm', 'dataset', 'recall', 'precision', 'fallout', \
 
 
 data_sets = ['cm100k_true', 'cm100k_observed', 'cm100k_true_synthetic', \
-            'cm100k_observed_synthetic', 'yahoo_true', 'yahoo_observed', \
-            'movielens1M']
+            'cm100k_observed_synthetic', 'yahoo_true', 'yahoo_observed']#, \
+            #'movielens1M']
 
 algorithms = ['mostpopular', 'itemknn', \
               'listrankmf', 'randomguess', 'slim', 'svdpp', 'ranksgd', \

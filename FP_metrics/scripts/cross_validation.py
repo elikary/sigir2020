@@ -55,14 +55,14 @@ def compute_mean_allfolds(eval_all, k, algorithms, data_set):
     eval_final.to_csv(q, header=True, index=None, sep=',', mode='w+')
         
 def main():
-    
+
     for d in cmv.data_sets:
-         if d == 'movielens1M':
-             r = cmv.result_cols_condensed
-         else:
-             r = cmv.result_cols
+        if d == 'movielens1M':
+            r = cmv.result_cols_condensed
+        else:
+            r = cmv.result_cols
          
-    compute_mean_allfolds(concat_allfolds(r, d), cmv.k, cmv.algorithms, d)
+        compute_mean_allfolds(concat_allfolds(r, d), cmv.k, cmv.algorithms, d)
 
 if __name__ == "__main__":
     main()    
