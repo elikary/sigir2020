@@ -1,0 +1,10 @@
+librec-2.0.0/bin/logs/*
+librec-2.0.0/bin/.nfs*
+.idea
+*/__pycache__
+*/.ipynb_checkpoints
+FP_metrics/scripts/main_recfall.py
+FP_metrics/scripts/evaluation_recfall.py
+FP_metrics/scripts/evaluation_cv.py
+FP_metrics/visualization/Figure 6-inline.ipynb
+FP_metrics/visualization/Untitled.ipynb
