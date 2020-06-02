@@ -1,2 +1,0 @@
-algorithm,dataset,recall,precision,fallout,fdr,hits,badhits,relevants,nonrelevants,unrated,cutoff
-mostpopular,movielens1m,0.0859092775739661,0.1452029826014913,0.0340684843151257,0.036089478044739026,8763,2178,114898,84786,49459,10

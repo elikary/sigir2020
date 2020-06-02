@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="apidocs">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/doc/apidocs.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
