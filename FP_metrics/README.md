@@ -1,7 +1,7 @@
 ## Evaluation
 After the recommendations per each algorithm are returned by librec, the next step is the evaluation.
 
-For the evaluation stage run:
+To execute evaluation on all datasets run:
 
     $ cd sigir2020/FP_metrics/scripts
     $ python main.py
