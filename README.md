@@ -2,12 +2,13 @@
 Source code used for the results reported in the [SIGIR2020 paper](http://marksanderson.org/publications/my_papers/sigir2020.pdf)
 
 > E. Mena-Maldonado, R. Cañamares, [P. Castells](http://ir.ii.uam.es/castells), Y. Ren and [M.Sanderson](http://marksanderson.org). Agreement and Disagreement between True and False-Positive Metrics in Recommender Systems Evaluation. 43rd ACM International Conference on Research and Development in Information Retrieval (SIGIR 2020). ACM, Virtual Event, China.
+
 Paper DOI (https://doi.org/10.1145/3397271.3401096)
 
 ## Sotware Required
 This project contains two modules:
-- **Recommendation:** we used (an edited version) of Librec 2.0.0 library to run the algorithms of our experiments (See [FP_metrics](https://github.com/elikary/sigir2020/tree/master/FP_metrics) folder)
-- **Evaluation:** we created some scripts in Python to do evaluation in our experiments (See [librec-2.0.0](https://github.com/elikary/sigir2020/tree/master/librec-2.0.0) folder)
+- **Recommendation:** we used (an edited version) of Librec 2.0.0 library to run the algorithms of our experiments (See [librec-2.0.0](https://github.com/elikary/sigir2020/tree/master/librec-2.0.0) folder)
+- **Evaluation:** we created some scripts in Python to do evaluation in our experiments (See [FP_metrics](https://github.com/elikary/sigir2020/tree/master/FP_metrics) folder)
 
 
 ## Datasets 
