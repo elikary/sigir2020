@@ -16,6 +16,12 @@ The results will be saved in `FP_metrics/evaluation/` as `<dataset-name>/<datase
 
 ![](https://github.com/elikary/sigir2020/blob/master/images/folds.png)
 
+### Visualize Results
+Please click on the links below to see the graphs in Jupyter notebooks. You will be redirected to Jupyter nbviewer
+
+[Figure 1](https://nbviewer.jupyter.org/github/elikary/sigir2020/blob/master/FP_metrics/visualization/Figure%201.ipynb)
+[Figure 6](https://nbviewer.jupyter.org/github/elikary/sigir2020/blob/master/FP_metrics/visualization/Figure%206.ipynb)
+
 ### System Requirements
 
 The recommended way to setup a working python environment is to use Anaconda distribution https://www.continuum.io/downloads.
